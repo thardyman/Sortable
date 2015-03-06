@@ -493,7 +493,7 @@
 			}
 
 			if (evt.preventDefault !== void 0) {
-				evt.preventDefault();
+//				evt.preventDefault();
 				!options.dragoverBubble && evt.stopPropagation();
 			}
 
@@ -637,7 +637,7 @@
 			this._offUpEvents();
 
 			if (evt) {
-				evt.preventDefault();
+//				evt.preventDefault();
 				!options.dropBubble && evt.stopPropagation();
 
 				ghostEl && ghostEl.parentNode.removeChild(ghostEl);
@@ -874,7 +874,7 @@
 
 	function _globalDragOver(/**Event*/evt) {
 		evt.dataTransfer.dropEffect = 'move';
-		evt.preventDefault();
+//		evt.preventDefault();
 	}
 
 
@@ -1034,7 +1034,7 @@
 	};
 
 
-	Sortable.version = '1.1.1';
+	Sortable.version = '1.1.1a';
 
 
 	/**
